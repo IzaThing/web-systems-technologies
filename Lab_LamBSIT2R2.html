@@ -1,65 +1,94 @@
-<html>
-    <head>
-        <title>Lab_lamBSIT2R2</title>
-    </head>
-    <h1>Student Registration Form</h1>
-
-    <body>
-        <form>
-                <table border ="1" style="border: 1px black">
-                    <tr>
-                      <td width = "500" style="background-color: lightblue" >First Name</td>
-                      <td width = "500"><input type = "text" id = "fn" width = "500"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: lightblue" >Last Name</td>
-                        <td ><input type = "text" id = "ln" width = "500"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: lightblue" >Email</td>
-                        <td><input type = "text" id = "email"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: lightblue" >Gender</td>
-                        <td>
-                            <label>
-                                <select id = "Gender">
-                                    <option value = "Male"> Male</option>
-                                    <option value = "Female"> Female</option>
-                                    <option value = "Other"> Other</option>
-                                </select>
-                            </label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: lightblue" >Date of Birth</td>
-                        <td>
-                            <input type = "text" id = "Address">
-                        </td>
-                    </tr>
-                </tr>
-                <tr>
-                    <td style="background-color: lightblue" >Address</td>
-                    <td>
-                        <label>
-                        <textarea id = "DoB"></textarea>
-                        </label>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="background-color: lightblue" >City</td>
-                    <td><input type = "text" id = "City"></td>
-                </tr>
-                <tr>
-                    <td style="background-color: lightblue" >Zip Code</td>
-                    <td><input type = "text" id = "zc"></td>
-                </tr>
-                <tr>
-                    <td style="background-color: lightblue" ></td>
-                    <td><button type="button" style="background-color: green" >Submit</td>
-                </tr>
-                  </table>
-        </form>
-    </body>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab_lamBSIT2R2</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=devvive-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div class="title">Student Registration Form</div>
+			<form action="#">
+				<table>
+					<tr>
+						<div class="user-details">
+						<div class="input-box">
+							<td width = "500"><span class="details">First Name</span></td>
+							<td width = "500"><input class="inputbox" type="text" id="texts" placeholder="Enter First Name" required></td>
+						</div>
+					</tr>
+					<tr>
+						<div class="input-box">
+							<td><span class="details">Last Name</span></td>
+							<td><input type="text" id="texts" placeholder="Enter Last Name" required></td>	
+						</div>
+					</tr>
+					<tr>
+						<div class="input-box">
+							<td><span class="details">Email</span></td>
+							<td><input type="text" id="texts" placeholder="Enter Email" required></td>	
+						</div>
+					</tr>	
+					<tr>
+						<div class="input-box">
+							<td><span class="details">Gender</span></td>
+							<td>
+								<label>
+									<select>
+										<option value = "Male">Male</option>
+										<option value = "Female">Female</option>
+										<option value = "Other">Other</option>
+									</select>
+								</label>
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="input-box">
+							<td><span class="details">Date of Birth</span></td>
+							<td><input type="date" id="texts" placeholder="Enter Date of Birth" required></td>
+						</div>
+					</tr>	
+					<tr>
+						<div class="input-box">
+							<td><span class="details">Address</span></td>
+							<td>
+								<label>
+									<textarea placeholder="ADDRESS:" required></textarea>
+								</label>
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="input-box">
+							<td><span class="details">City</span></td>
+							<td><input type="text" id="texts" placeholder="Enter City" required></td>	
+						</div>
+					</tr>
+					<tr></tr>
+						<div class="input-box">
+							<td><span class="details">Zip Code</span></td>
+							<td><input type="text" id="texts" placeholder="Enter Zip Code" required></td>
+						</div>
+					</tr>
+					<tr>
+						<div class="Input">
+							<td>
+								<label style="font-size: 12px;">
+									<input type="checkbox"> I hereby declare that the provided above<br>are all true and correct
+								</label>
+							</td>
+							<td>
+								<div class="button" id="submit">
+									<a href="thankyou.html"> <button class="btn btn--primary" type="button">Submit</button></a>
+								</div>
+							</td>
+						</div>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>	
+</body>
 </html>
