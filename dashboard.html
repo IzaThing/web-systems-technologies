@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .bg-gradient-linear-135 {
+      background-image: linear-gradient(135deg, #71b7e6 0%, #9b59b6 100%);
+      background-size: 450% 450%;
+      animation: Gradient 3s ease infinite;
+    }
+
+    @keyframes Gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+  </style>
+</head>
+<body class="bg-gradient-linear-135 bg-[length:450%_450%] bg-[#71b7e6] bg-[#9b59b6] bg-local bg-no-repeat">
+    <div class="dashboard-header bg-gradient-to-r from-blue-700 to-blue-500 text-black py-4">
+        <h2 class="text-center font-bold text-white text-4xl">Dashboard</h2>
+        <h2 class="text-xl text-center font-black mt-"></h2>
+        <a href="index.html">
+        <div class="flex justify-between items-center px-4">
+          
+            <a href="index.html">
+                <button class="out-button bg-blue-800 hover:bg-blue-600 text-white px-4 py-2 rounded">Log Out</button>
+            </a>
+        </div>
+    </div>
+    <div class="sidebar-display bg-gradient-to-r from-blue-800 to-blue-800 text-white-800 py-4 px-2 fixed top-0 left-0 h-full w-40">
+        <h2 class="text-2xl text-center font-bold text-white border-blue-800 ">  Dashboard</h2>
+        <ul class="mt-4">
+            <li><a href="#Home" class="text-white text-bold sidebar-button block py-6 px-9 border-b border-blue-500">Home</a></li>
+            <li><a href="#Analytics" class=" text-white text-bold sidebar-button block py-6 px-9 border-b border-blue-500">Analytics</a></li>
+            <li><a href="#Reports" class=" text-white text-bold sidebar-button block py-6 px-9 border-b border-blue-500">Reports</a></li>
+            <li><a href="#Settings" class=" text-white text-bold sidebar-button block py-6 px-9 border-b border-blue-500">Settings</a></li>
+        </ul>
+    </div>
+    <div class="main-body ml-100 mt-200 px-40 text-center">
+        <div class="flex flex-col items-center">
+            <h1 class="mt-80 text-4xl">Welcome to the Tailwind!</h1>
+           
+            <i class="mt-8 text-lg">Never touch a running code</i>
+        </div>
+    </div>
+    <div class="footer bg-gradient-to-r from-blue-800 to-blue-800 text-gray-900 py-2 px-4 fixed bottom-0 left-0 w-full flex justify-center items-center">
+        <h5 class = "mt - 9  text-2xl text-white text-bold ">&copy;2024 Dashboard. All rights reserved.</h5>
+
+    </div>
+</body>
+</html>
